@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dear Jayati 💖</title>
+<style>
+body{
+  background: radial-gradient(circle at top, #ffc4d4, #ff9a9e);
+  color:white;text-align:center;height:100vh;
+  font-family:"Poppins",sans-serif;overflow:hidden;
+}
+h1{font-size:3em;margin-top:10vh;text-shadow:0 0 10px #fff;}
+p{font-size:1.3em;margin-top:15px;}
+button{
+  background:#fff;color:#ff1493;border:none;border-radius:30px;
+  padding:12px 35px;font-size:1.1em;cursor:pointer;margin:10px;
+  box-shadow:0 0 10px rgba(255,255,255,0.6);transition:.3s;
+}
+button:hover{background:#ff69b4;color:#fff;transform:scale(1.1);}
+.btn-container{margin-top:30px;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+</style>
+</head>
+<body>
+<h1>Dear Jayati 💖</h1>
+<p>Can I tell you something sweet? 😚</p>
+<div class="btn-container">
+  <button onclick="window.location.href='page2.html'">Yes 💞</button>
+  <button id="noBtn" onmouseover="moveNo()">No 😜</button>
+</div>
+
+<audio autoplay loop>
+  <source src="https://www2.cs.uic.edu/~i101/SoundFiles/My%20Heart%20Will%20Go%20On.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function moveNo(){
+  const btn=document.getElementById("noBtn");
+  const x=Math.random()*(window.innerWidth-150);
+  const y=Math.random()*(window.innerHeight-100);
+  btn.style.position="absolute";
+  btn.style.left=`${x}px`;
+  btn.style.top=`${y}px`;
+}
+</script>
+</body>
+</html>
